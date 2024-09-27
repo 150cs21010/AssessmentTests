@@ -1,0 +1,8 @@
+def diwali_contest_steps(n):
+    steps = 0
+    while n > 1:
+        n = n // 5  
+        steps += 1
+    return steps
+n = 180
+print(diwali_contest_steps(n)) 

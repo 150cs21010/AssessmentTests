@@ -1,0 +1,12 @@
+def chocolates_for_A(jars):
+    total_chocolates_A = 0
+    for jar in jars:
+        
+        chocolates_in_jar = jar
+        chocolates_picked = 0
+        
+        for i in range(0, chocolates_in_jar, 3):
+            total_chocolates_A += 1
+    return total_chocolates_A
+jars = [10, 20, 30]  
+print("Total chocolates picked by A:", chocolates_for_A(jars))

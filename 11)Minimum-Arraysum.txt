@@ -1,0 +1,6 @@
+def minimum_array_sum(arr):
+     "Return the maximum value in the array."
+    return max(arr)
+input_array = [1, 2, 3, 4, 5]
+output_value = minimum_array_sum(input_array)
+print(output_value)  

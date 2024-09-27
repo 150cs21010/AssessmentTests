@@ -1,0 +1,10 @@
+def count_spaces(s):
+     "Count the number of spaces in the given string."
+    space_count = 0   
+    for char in s:
+        if char == ' ': 
+            space_count += 1         
+    return space_count
+input_string = "Hello world Hey"
+output_count = count_spaces(input_string)
+print(output_count)  

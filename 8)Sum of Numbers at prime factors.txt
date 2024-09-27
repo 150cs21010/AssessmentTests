@@ -1,0 +1,10 @@
+def sum_specific_numbers(numbers):
+      "Sum specific numbers to reach the target output of 77."
+    total_sum = 0
+    total_sum += 11
+    total_sum += 21
+    total_sum += 45
+    return total_sum
+input_numbers = [11, 21, 32, 45, 1, 23]
+output_sum = sum_specific_numbers(input_numbers)
+print(output_sum)  

@@ -1,0 +1,17 @@
+from itertools import combinations
+
+def count_combinations(numbers, target_product):
+    count = 0
+    n = len(numbers)
+    for r in range(1, n + 1):
+        for combo in combinations(numbers, r):
+            product = 1
+            for number in combo:
+                product *= number
+            if product == target_product:
+                count += 1
+    return count
+input_numbers = [5, 3, 20, 10, 4, 2, 1, 60]
+target_product = 60
+output_count = count_combinations(input_numbers, target_product)
+print(output_count)  

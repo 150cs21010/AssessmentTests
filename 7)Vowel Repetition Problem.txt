@@ -1,0 +1,18 @@
+def most_repeated_vowel(s):
+    vowels = 'aeiou'
+    vowel_count = {v: 0 for v in vowels}  
+    for char in s.lower(): 
+        if char in vowel_count:
+            vowel_count[char] += 1
+    max_vowel = None
+    max_count = 0
+
+    for vowel, count in vowel_count.items():
+        if count > max_count:
+            max_count = count
+            max_vowel = vowel
+
+    return max_vowel if max_count > 0 else None  
+input_string = "HelloWorld"
+output_vowel = most_repeated_vowel(input_string)
+print(output_vowel)  

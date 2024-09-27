@@ -1,0 +1,10 @@
+def count_returns_to_origin(A):
+    position = 0
+    count = 0  
+    for move in A:
+        position += move
+        if position == 0:
+            count += 1    
+    return count
+A = [1, -1, 1, -1, 1]
+print(count_returns_to_origin(A)) 

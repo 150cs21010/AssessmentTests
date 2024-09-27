@@ -1,0 +1,7 @@
+def count_occurrences(input_list, target):
+    count = input_list.count(target)
+    return count
+input_values = [1, 1, 2, 2, 2, 3]  
+target_value = 2  
+output_count = count_occurrences(input_values, target_value)
+print(output_count)
