@@ -1,0 +1,10 @@
+def encode_number(num):
+    "Encode the number by squaring each digit and concatenating the results."
+    encoded_string = ""  
+    for digit in str(num): 
+        squared_value = int(digit) ** 2  # Square the digit
+        encoded_string += str(squared_value)     
+    return encoded_string
+input_number = 167
+output_value = encode_number(input_number)
+print(output_value) 

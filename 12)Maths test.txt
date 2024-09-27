@@ -1,0 +1,6 @@
+def maths_test(x):
+    "Return the input value incremented by 1."
+    return x + 1
+input_value = 6
+output_value = maths_test(input_value)
+print(output_value)  

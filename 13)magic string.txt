@@ -1,0 +1,15 @@
+def magic_string(s):
+    "Calculate the length of all contiguous character groups in the string."
+    total_length = 0
+    current_length = 1
+    for i in range(1, len(s)):
+        if s[i] == s[i - 1]:  
+            current_length += 1  
+        else:
+            total_length += current_length  
+            current_length = 1  
+    total_length += current_length
+    return total_length
+input_string = "aaabbbccdddd"
+output_value = magic_string(input_string)
+print(output_value) 

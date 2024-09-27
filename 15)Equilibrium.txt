@@ -1,0 +1,13 @@
+def find_equilibrium_index(arr):
+    """Returns the first equilibrium index where the sum of elements to the left
+    is equal to the sum of elements to the right."""
+    total_sum = sum(arr)
+    left_sum = 0
+    for i, value in enumerate(arr):
+        if left_sum == (total_sum - left_sum - value):
+            return i
+        left_sum += value
+    return -1  
+input_array = [2, 4, 7, 3, 3]
+output_value = find_equilibrium_index(input_array)
+print(output_value)  
